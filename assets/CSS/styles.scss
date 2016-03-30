@@ -1,0 +1,77 @@
+$Primary-Background: #E0FBFC;
+$Secondary-Background: #3D5A80;
+// $Primary-Font-Color: #
+$Secondary-Font-Color: #E5E8B6;
+$Font-Stack: 'Cabin', sans-serif;
+$Font-Color: #293241;
+
+//whole page styling
+
+body {
+   background-color: $Primary-Background;
+   font-family: $Font-Stack;
+   color: $Font-Color;
+   margin: 0;
+}
+
+// header styling
+
+header {
+   width: 100%;
+   padding: 1em 0;
+   background-color: $Secondary-Background;
+   color: $Primary-Background;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0;
+   nav {
+      margin: 0 2em;
+   }
+   h1 {
+      // display: inline-block;
+      // text-align: center;
+   }
+   .left-nav {
+
+   }
+   .right-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   i {
+      // color: $Primary-Background;
+   }
+   a, span {
+      color: $Primary-Background;
+      font-size: 2em;
+      margin: 0 0.2em;
+      text-decoration: none;
+   }
+   a:hover, i:hover{
+      text-decoration: underline;
+   }
+}
+
+//styling for the content container
+
+.content {
+   display: flex;
+   justify-content: space-around;
+}
+
+//Styling for the left column - should have links and other interesting things inside.
+
+.left-column {
+   width: 30%;
+   border: 1px solid red;
+}
+
+
+//styling for the right column - main content.
+
+.right-column {
+   width: 60%;
+   border: 1px solid red;
+}

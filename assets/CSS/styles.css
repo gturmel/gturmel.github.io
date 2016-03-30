@@ -1,3 +1,42 @@
+body {
+  background-color: #E0FBFC;
+  font-family: "Cabin", sans-serif;
+  color: #293241;
+  margin: 0; }
 
+header {
+  width: 100%;
+  padding: 1em 0;
+  background-color: #3D5A80;
+  color: #E0FBFC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; }
+  header nav {
+    margin: 0 2em; }
+  header .right-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  header a, header span {
+    color: #E0FBFC;
+    font-size: 2em;
+    margin: 0 0.2em;
+    text-decoration: none; }
+  header a:hover, header i:hover {
+    text-decoration: underline; }
+
+.content {
+  display: flex;
+  justify-content: space-around; }
+
+.left-column {
+  width: 30%;
+  border: 1px solid red; }
+
+.right-column {
+  width: 60%;
+  border: 1px solid red; }
 
 /*# sourceMappingURL=styles.css.map */

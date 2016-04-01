@@ -15,6 +15,8 @@ header {
   margin: 0; }
   header nav {
     margin: 0 2em; }
+  header h1 {
+    margin-left: 1em; }
   header .right-nav {
     display: flex;
     justify-content: space-around;
@@ -32,11 +34,16 @@ header {
   justify-content: space-around; }
 
 .left-column {
-  width: 30%;
-  border: 1px solid red; }
+  width: 20%; }
+  .left-column li, .left-column a {
+    list-style-type: none;
+    line-height: 2em;
+    text-decoration: none;
+    color: #293241; }
+  .left-column a:hover {
+    text-decoration: underline; }
 
 .right-column {
-  width: 60%;
-  border: 1px solid red; }
+  width: 75%; }
 
 /*# sourceMappingURL=styles.css.map */

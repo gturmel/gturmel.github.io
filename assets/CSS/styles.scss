@@ -1,9 +1,10 @@
 $Primary-Background: #E0FBFC;
 $Secondary-Background: #3D5A80;
-// $Primary-Font-Color: #
-$Secondary-Font-Color: #E5E8B6;
+// $Secondary-Font-Color: #;
 $Font-Stack: 'Cabin', sans-serif;
 $Font-Color: #293241;
+
+// 3D5A80 (dark blue) 98C1D9 (mid blue) E0FBFC (light blue) EE6C4D (interesting orange) 293241 (really dark blue)
 
 //whole page styling
 
@@ -29,8 +30,7 @@ header {
       margin: 0 2em;
    }
    h1 {
-      // display: inline-block;
-      // text-align: center;
+      margin-left: 1em;
    }
    .left-nav {
 
@@ -64,14 +64,22 @@ header {
 //Styling for the left column - should have links and other interesting things inside.
 
 .left-column {
-   width: 30%;
-   border: 1px solid red;
+   width: 20%;
+   li, a {
+      list-style-type: none;
+      line-height: 2em;
+      text-decoration: none;
+      color: $Font-Color;
+   }
+   a:hover {
+      text-decoration: underline;
+   }
 }
 
 
 //styling for the right column - main content.
 
 .right-column {
-   width: 60%;
-   border: 1px solid red;
+   width: 75%;
+
 }

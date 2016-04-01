@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to my Github</title>
+  <title>Greg's Portfolio</title>
   <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/">
  <link rel="stylesheet" href="assets/CSS/styles.css">
  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
@@ -12,13 +12,12 @@
 <body>
 <!-- header! -->
    <header>
-      <nav class="left-nav">
+      <h1>Greg Turmel</h1>
+      <nav class="right-nav">
          <a href="https://github.com/gturmel">
             <i class="fa fa-github"></i>
          </a>
-      </nav>
-      <h1>Welcome to my Github!</h1>
-      <nav class="right-nav">
+         <span>|</span>
          <a href="https://www.linkedin.com/in/greg-turmel-48a072115?trk=prof-samename-picture">
             <i class="fa fa-linkedin"></i>
          </a>
@@ -36,14 +35,24 @@
          <nav class="left-links">
             <h6>List of Links to various things of mine</h6>
             <ul>
-               <li></li>
+               <li><a href="#">Final Project</a></li>
+               <li><a href="#">'Things I've Done'</a>
+                  <ul>
+                     <li><a href="#">Project Euler</a></li>
+                     <li><a href="https://github.com/gturmel/chessboard">Chessboard</a></li>                     <li><a href="Memory-Game/memory-index.html">Memory Game</a></li>
+                  </ul>
+               </li>
+               <li><a href="Assets/#" target="_blank">Resume</a></li>
+
             </ul>
          </nav>
       </section>
 <!-- Right side of the page starts here! -->
       <section class="right-column">
-         <h2>This is going to have information on me and stuff</h2>
-         <a href = "Memory-Game/memory-index.html">My Memory Game</a>
+         <h2>Display of things I've done</h2>
+         <section>
+            <ng-view></ng-view>
+         </section>
       </section>
    </div>
   <script src="Memory-Game/Assets/JS/script.js"></script>

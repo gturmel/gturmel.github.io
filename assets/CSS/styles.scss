@@ -1,10 +1,11 @@
-$Primary-Background: #E0FBFC;
+$Primary-Background: white;
 $Secondary-Background: #3D5A80;
 // $Secondary-Font-Color: #;
 $Font-Stack: 'Cabin', sans-serif;
 $Font-Color: #293241;
 
 // 3D5A80 (dark blue) 98C1D9 (mid blue) E0FBFC (light blue) EE6C4D (interesting orange) 293241 (really dark blue)
+@import 'memory-styles.scss';
 
 //whole page styling
 

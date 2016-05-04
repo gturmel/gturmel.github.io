@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Greg's Portfolio</title>
-  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/">
- <link rel="stylesheet" href="assets/CSS/styles.css">
- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
- <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-</head>
-<body>
-<!-- header! -->
-   <header>
-      <h1>Greg Turmel</h1>
-      <nav class="right-nav">
-         <a href="https://github.com/gturmel">
-            <i class="fa fa-github"></i>
-         </a>
-         <span>|</span>
-         <a href="https://www.linkedin.com/in/greg-turmel-48a072115?trk=prof-samename-picture">
-            <i class="fa fa-linkedin"></i>
-         </a>
-         <span>|</span>
-         <a href="https://twitter.com/sadpandatime">
-            <i class="fa fa-twitter"></i>
-         </a>
-         <span>|</span>
-         <a href="http://gturmel.blogspot.com/">Blog</a>
-      </nav>
-   </header>
-   <div class="content">
-<!-- Left side of the page starts here! -->
-      <section class="left-column">
-         <nav class="left-links">
-            <h6></h6>
-            <ul>
-               <li><a href="https://github.com/Can-i-Walk">Final Project</a></li>
-               <li>Projects
-                  <ul>
-                     <!-- <li><a href="#">Project Euler</a></li> -->
-                     <li><a href="https://github.com/gturmel/chessboard">Chessboard</a></li>                     <li><a href="https://github.com/gturmel/memory-layout">Memory Game</a></li>
-                  </ul>
-               </li>
-               <!-- <li><a href="" target="_blank">Resume</a></li> -->
-
-            </ul>
+   <head>
+      <title>Greg's Portfolio</title>
+      <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/">
+      <link rel="stylesheet" href="assets/CSS/styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <!-- header! -->
+      <header>
+         <h1>Greg Turmel</h1>
+         <nav class="right-nav">
+            <a href="https://github.com/gturmel">
+               <i class="fa fa-github"></i>
+            </a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/greg-turmel-48a072115?trk=prof-samename-picture">
+               <i class="fa fa-linkedin"></i>
+            </a>
+            <span>|</span>
+            <a href="https://twitter.com/sadpandatime">
+               <i class="fa fa-twitter"></i>
+            </a>
+            <span>|</span>
+            <a href="http://gturmel.blogspot.com/">Blog</a>
          </nav>
-      </section>
-<!-- Right side of the page starts here! -->
-      <section class="right-column">
-         <h2>More to come shortly!</h2>
-         <section class="landing-page">
-            <p>Welcome to my Portfolio! </p>
-            <ng-view></ng-view>
+      </header>
+      <div class="content">
+   <!-- Left side of the page starts here! -->
+         <section class="left-column">
+            <nav class="left-links">
+               <h6></h6>
+               <ul>
+                  <li><a href="https://github.com/Can-i-Walk">Final Project</a></li>
+                  <li>Projects
+                     <ul>
+                        <!-- <li><a href="#">Project Euler</a></li> -->
+                        <li><a href="https://github.com/gturmel/chessboard">Chessboard</a></li>
+                        <li><a href="https://github.com/gturmel/memory-layout">Memory Game</a></li>
+                     </ul>
+                  </li>
+                  <!-- <li><a href="" target="_blank">Resume</a></li> -->
+
+               </ul>
+            </nav>
          </section>
-      </section>
-   </div>
-  <script src="Memory-Game/Assets/JS/script.js"></script>
-</body>
+   <!-- Right side of the page starts here! -->
+         <section class="right-column">
+            <h2>More to come shortly</h2>
+            <section class="landing-page">
+               <p>Welcome to my Portfolio</p>
+               <ng-view></ng-view>
+            </section>
+         </section>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="assets/JS/app.js"></script>
+      <script src="assets/JS/controllers.js"></script>
+      <script src="assets/JS/memory-script.js"></script>
+   </body>
 </html>

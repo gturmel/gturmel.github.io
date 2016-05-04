@@ -1,5 +1,160 @@
+/*Basic Page Style*/
+/*html {
+   font-size: 1em;
+}
+
 body {
-  background-color: #E0FBFC;
+   background-color: #348b9e;
+   font-family: Orbitron, sans-serif;
+}*/
+/*new-game.html styling*/
+/*
+header {
+   color: #eee;
+   text-align: center;
+}
+
+.new-game-heading {
+   margin-top: 5%;
+   margin-bottom: 5%;
+   font-size: 4em;
+}
+
+.new-game-title {
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+.new-game-easy {
+   border: 0.1em solid #eee;
+   width: auto;
+   display: inline-block;
+   padding: 2em 14em;
+   color: #eee;
+}
+
+.new-game-easy:hover {
+   color: #348b9e;
+   background-color: #eee;
+}
+
+.new-game-easy-link {
+   text-decoration: none;
+}
+
+.new-game-easy-link:hover a {
+   color: #348b9e;
+}
+
+.new-game-hard{
+   border: 0.1em solid #eee;
+   width: auto;
+   display: inline-block;
+   padding: 2em 14em;
+   color: #eee;
+}
+
+.new-game-hard:hover {
+   color: #348b9e;
+   background-color: #eee;
+}
+
+.new-game-hard-link {
+   text-decoration: none;
+}
+
+.new-game-hard-link a:hover{
+   color: #348b9e;
+}
+
+/*New Game screen animation*/
+/*.new-game-screen {
+   animation-name: bounce;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   -webkit-animation-name: bounce;
+}*/
+/*@keyframes bounce {
+   0% {
+      background-color: #348b9e
+   }
+   100% {
+      background-color: #45a782;
+   }
+   0% {-webkit-transform: rotateZ(1deg), rotateY(10deg);
+   }
+   100% {-webkit-transform: rotateZ(-1deg) rotateY(-10deg);
+   }
+}*/
+/*index.html styling*/
+/*body {
+   margin: 1%;
+}*/
+/*index.html header styling*/
+.memory-header {
+  margin-bottom: 1em; }
+
+.memory-title {
+  text-align: center;
+  font-size: 4em; }
+
+.memory-lives {
+  float: left; }
+
+.memory-time {
+  float: right; }
+
+/*index.html ul styling*/
+.memory-game {
+  margin-top: 5em;
+  border: 1px solid black; }
+
+.memory-tileset {
+  list-style: none;
+  padding: 0; }
+
+.memory-tile {
+  display: inline;
+  margin: 0.4em; }
+
+/*flipping tile styling*/
+.tile {
+  padding: 3em;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 0.8em;
+  background-color: #778899;
+  color: transparent;
+  /*this color: transparent is what hides the icon!*/
+  height: 2em;
+  width: 2em;
+  transition: background 1s, -webkit-transform 1s; }
+
+.clicked {
+  -webkit-transform: rotateY(180deg);
+  background-color: red;
+  color: white;
+  pointer-events: none; }
+
+.flipped {
+  -webkit-transform: rotateY(180deg);
+  background-color: #778899;
+  color: transparent; }
+
+.found {
+  padding: 3em;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 0.8em;
+  background-color: red;
+  color: white;
+  /*this color: transparent is what hides the icon!*/
+  height: 2em;
+  width: 2em; }
+
+body {
+  background-color: white;
   font-family: "Cabin", sans-serif;
   color: #293241;
   margin: 0; }
@@ -8,7 +163,7 @@ header {
   width: 100%;
   padding: 1em 0;
   background-color: #3D5A80;
-  color: #E0FBFC;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +178,7 @@ header {
     justify-content: space-around;
     align-items: center; }
   header a, header span {
-    color: #E0FBFC;
+    color: white;
     font-size: 2em;
     margin: 0 0.2em;
     text-decoration: none; }

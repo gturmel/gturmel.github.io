@@ -106,10 +106,6 @@ header {
   float: right; }
 
 /*index.html ul styling*/
-.memory-game {
-  margin-top: 5em;
-  border: 1px solid black; }
-
 .memory-tileset {
   list-style: none;
   padding: 0; }
@@ -182,8 +178,8 @@ header {
     font-size: 2em;
     margin: 0 0.2em;
     text-decoration: none; }
-  header a:hover, header i:hover {
-    text-decoration: underline; }
+  header a:hover {
+    border-bottom: 0.1em solid white; }
 
 .content {
   display: flex;
@@ -201,5 +197,11 @@ header {
 
 .right-column {
   width: 75%; }
+
+img {
+  width: 100%; }
+
+.project {
+  width: 85%; }
 
 /*# sourceMappingURL=styles.css.map */

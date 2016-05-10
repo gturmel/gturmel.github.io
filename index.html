@@ -3,7 +3,7 @@
    <head>
       <title>Greg's Portfolio</title>
       <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/">
-      <link rel="stylesheet" href="assets/CSS/styles.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
       <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -41,6 +41,7 @@
                         <li><a href="https://github.com/gturmel/chessboard">Chessboard</a></li>                     <li><a href="https://github.com/gturmel/memory-layout">Memory Game</a></li>
                      </ul>
                   </li>
+                  <li>About Me</li>
                   <!-- <li><a href="" target="_blank">Resume</a></li> -->
 
                </ul>
@@ -48,18 +49,46 @@
             </section>
    <!-- Right side of the page starts here! -->
          <section class="right-column">
-            <h2>More to come shortly</h2>
             <section class="landing-page">
-               <p>Welcome to my Portfolio</p>
-               <ng-view></ng-view>
+               <div class = "welcome project">
+                  <h2>Welcome to my Portfolio</h2>
+                  <p>Hi! First off, thanks for visiting! Take your time to look at what I've done and what I'm currently working on.</p>
+               </div>
+               <div class = "project-euler project">
+                  <img src="assets/images/project-euler.png" alt = "Project Euler Screenshot">
+                  <ul>
+                     <li>
+                        <h3>Description:</h3>
+                        <p><a href = "https://projecteuler.net/archives" target = "_blank">Project Euler</a> is a site dedicated to solving math challenges through code. There isn't a right or a wrong way to solve any of the problems, as long as you end up in the same place at the end. Now that I'm finished up at the Iron Yard, this is giving me a lot to work on and think about as I look for a job.</p>
+                     </li>
+                     <li>
+                        <h3>Technologies Used:</h3>
+                        <p>JavaScript</p>
+                     </li>
+                     <li>
+                        <h3>The Code:</h3>
+                        <p><a href = "https://github.com/gturmel/Project-Euler" target="_blank">My Github</a> for Project Euler</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class = "chessboard project">
+                  <img src="assets/images/chessboard.png" alt = "chessboard Screenshot">
+                  <ul>
+                  </ul>
+               </div>
+               <div class = "memory-game project">
+                  <img src="assets/images/memory-game.png" alt = "memory-game Screenshot">
+                  <ul>
+                  </ul>
+               </div>
             </section>
          </section>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-      <script src="assets/JS/app.js"></script>
-      <script src="assets/JS/controllers.js"></script>
-      <script src="assets/JS/memory-script.js"></script>
+      <script src="assets/js/app.js"></script>
+      <script src="assets/js/controllers.js"></script>
+      <script src="assets/js/memory-script.js"></script>
    </body>
 </html>

@@ -8,7 +8,7 @@
       <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    </head>
-   <body>
+   <body ng-app="portfolio">
    <!-- header! -->
       <header>
          <h1>Greg Turmel</h1>
@@ -28,17 +28,18 @@
             <a href="http://gturmel.blogspot.com/">Blog</a>
          </nav>
       </header>
-      <div class="content">
+      <div class="content" ng-controller="PortfolioController">
    <!-- Left side of the page starts here! -->
          <section class="left-column">
             <nav class="left-links">
-               <h6></h6>
+               <h6>{{ greeting }}</h6>
                <ul>
                   <li><a href="https://github.com/Can-i-Walk">Final Project</a></li>
                   <li>Projects
                      <ul>
-                         <li><a href="https://github.com/gturmel/Project-Euler">Project Euler</a></li>
-                        <li><a href="https://github.com/gturmel/chessboard">Chessboard</a></li>                     <li><a href="https://github.com/gturmel/memory-layout">Memory Game</a></li>
+                        <li ng-click="setTab(2)">Project Euler</li>
+                        <li ng-click="setTab(3)">Chessboard</li>
+                        <li ng-click="setTab(4)">Memory Game</li>
                      </ul>
                   </li>
                   <li>About Me</li>
@@ -54,7 +55,7 @@
                   <h2>Welcome to my Portfolio</h2>
                   <p>Hi! First off, thanks for visiting! Take your time to look at what I've done and what I'm currently working on.</p>
                </div>
-               <div class = "project-euler project">
+               <div class = "project-euler project" ng-show="">
                   <img src="assets/images/project-euler.png" alt = "Project Euler Screenshot">
                   <ul>
                      <li>

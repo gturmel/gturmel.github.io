@@ -28,7 +28,7 @@
             <a href="http://gturmel.blogspot.com/">Blog</a>
          </nav>
       </header>
-      <div class="content" ng-controller="PortfolioController">
+      <div class="content" ng-controller="PortfolioController as portfolio">
    <!-- Left side of the page starts here! -->
          <section class="left-column">
             <nav class="left-links">
@@ -37,12 +37,12 @@
                   <li><a href="https://github.com/Can-i-Walk">Final Project</a></li>
                   <li>Projects
                      <ul>
-                        <li class = "left-column-link" ng-click="setTab(2)">Project Euler</li>
-                        <li class = "left-column-link" ng-click="setTab(3)">Chessboard</li>
-                        <li class = "left-column-link" ng-click="setTab(4)">Memory Game</li>
+                        <li class = "left-column-link" ng-click = "portfolio.setTab(2)">Project Euler</li>
+                        <li class = "left-column-link" ng-click = "portfolio.setTab(3)">Chessboard</li>
+                        <li class = "left-column-link" ng-click = "portfolio.setTab(4)">Memory Game</li>
                      </ul>
                   </li>
-                  <li class = "left-column-link" ng-click="setTab(5)">About Me</li>
+                  <li class = "left-column-link" ng-click="tab === 5">About Me</li>
                   <!-- <li><a href="" target="_blank">Resume</a></li> -->
 
                </ul>
@@ -55,7 +55,7 @@
                   <h2>Welcome to my Portfolio</h2>
                   <p>Hi! First off, thanks for visiting! Take your time to look at what I've done and what I'm currently working on.</p>
                </div>
-               <div class = "project-euler project" ng-show="true">
+               <div class = "project-euler project" ng-show = "portfolio.selected(2)">
                   <img src="assets/images/project-euler.png" alt = "Project Euler Screenshot">
                   <ul>
                      <li>
@@ -72,7 +72,7 @@
                      </li>
                   </ul>
                </div>
-               <div class = "chessboard project">
+               <div class = "chessboard project" ng-show = "portfolio.selected(3)">
                   <img src="assets/images/chessboard.png" alt = "chessboard Screenshot">
                   <ul>
                      <li>
@@ -89,7 +89,7 @@
                      </li>
                   </ul>
                </div>
-               <div class = "memory-game project">
+               <div class = "memory-game project" ng-show = "portfolio.selected(4)">
                   <img src="assets/images/memory-game.png" alt = "memory-game Screenshot">
                   <ul>
                      <li>

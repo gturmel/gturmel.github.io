@@ -1,10 +1,15 @@
 portfolio.controller('PortfolioController', ['$scope', function($scope){
 
-   $scope.setTab = function(number){
-      console.log('number');
-      console.log(number);
+   this.tab = 2;
+
+   this.setTab = function(number){
+      this.tab = number;
+      console.log(this.tab);
    };
-console.log('controller works');
+
+   this.selected = function(checkTab){
+      return this.tab === checkTab;
+   }
 
 
 }]); //end of portfolio controller

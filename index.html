@@ -37,12 +37,12 @@
                   <li><a href="https://github.com/Can-i-Walk">Final Project</a></li>
                   <li>Projects
                      <ul>
-                        <li ng-click="setTab(2)">Project Euler</li>
-                        <li ng-click="setTab(3)">Chessboard</li>
-                        <li ng-click="setTab(4)">Memory Game</li>
+                        <li class = "left-column-link" ng-click="setTab(2)">Project Euler</li>
+                        <li class = "left-column-link" ng-click="setTab(3)">Chessboard</li>
+                        <li class = "left-column-link" ng-click="setTab(4)">Memory Game</li>
                      </ul>
                   </li>
-                  <li>About Me</li>
+                  <li class = "left-column-link" ng-click="setTab(5)">About Me</li>
                   <!-- <li><a href="" target="_blank">Resume</a></li> -->
 
                </ul>
@@ -55,7 +55,7 @@
                   <h2>Welcome to my Portfolio</h2>
                   <p>Hi! First off, thanks for visiting! Take your time to look at what I've done and what I'm currently working on.</p>
                </div>
-               <div class = "project-euler project" ng-show="">
+               <div class = "project-euler project" ng-show="true">
                   <img src="assets/images/project-euler.png" alt = "Project Euler Screenshot">
                   <ul>
                      <li>
@@ -75,11 +75,35 @@
                <div class = "chessboard project">
                   <img src="assets/images/chessboard.png" alt = "chessboard Screenshot">
                   <ul>
+                     <li>
+                        <h3>Description:</h3>
+                        <p>This chessboard moves through the first several moves of the Catalan Opening in chess. I'm populating the board with jQuery and JavaScript, and tying logic to the button click events.</p>
+                     </li>
+                     <li>
+                        <h3>Technologies Used:</h3>
+                        <p>JavaScript, jQuery, HTML, CSS</p>
+                     </li>
+                     <li>
+                        <h3>The Code:</h3>
+                        <p><a href = "https://github.com/gturmel/chessboard" target="_blank">My Github</a> for The Catalan Opening</p>
+                     </li>
                   </ul>
                </div>
                <div class = "memory-game project">
                   <img src="assets/images/memory-game.png" alt = "memory-game Screenshot">
                   <ul>
+                     <li>
+                        <h3>Description:</h3>
+                        <p>This is a simple memory game built with HTML, CSS, with the logic in jQuery. I built this code over two weekend assignments at The Iron Yard. The first weekend involved building the cards and layout, the second weekend several weeks later added the game logic and timer.</p>
+                     </li>
+                     <li>
+                        <h3>Technologies Used:</h3>
+                        <p>JavaScript, jQuery, HTML, CSS</p>
+                     </li>
+                     <li>
+                        <h3>The Code:</h3>
+                        <p><a href = "https://github.com/gturmel/memory-layout" target="_blank">My Github</a> for my Memory Game</p>
+                     </li>
                   </ul>
                </div>
             </section>

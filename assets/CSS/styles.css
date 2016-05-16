@@ -194,6 +194,8 @@ header {
     color: #293241; }
   .left-column a:hover {
     text-decoration: underline; }
+  .left-column .left-column-link:hover {
+    text-decoration: underline; }
 
 .right-column {
   width: 75%; }

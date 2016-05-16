@@ -195,7 +195,8 @@ header {
   .left-column a:hover {
     text-decoration: underline; }
   .left-column .left-column-link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
 
 .right-column {
   width: 75%; }

@@ -1,6 +1,6 @@
 portfolio.controller('PortfolioController', ['$scope', function($scope){
 
-   this.tab = 2;
+   this.tab = 1;
 
    this.setTab = function(number){
       this.tab = number;

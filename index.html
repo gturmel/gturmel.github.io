@@ -42,7 +42,7 @@
                         <li class = "left-column-link" ng-click = "portfolio.setTab(4)">Memory Game</li>
                      </ul>
                   </li>
-                  <li class = "left-column-link" ng-click="tab === 5">About Me</li>
+                  <li class = "left-column-link" ng-click="portfolio.setTab(1)">About Me</li>
                   <!-- <li><a href="" target="_blank">Resume</a></li> -->
 
                </ul>
@@ -51,9 +51,10 @@
    <!-- Right side of the page starts here! -->
          <section class="right-column">
             <section class="landing-page">
-               <div class = "welcome project">
+               <div class = "welcome project" ng-show="portfolio.selected(1)">
                   <h2>Welcome to my Portfolio</h2>
-                  <p>Hi! First off, thanks for visiting! Take your time to look at what I've done and what I'm currently working on.</p>
+                  <img class = "headshot" src="assets/images/headshot.jpg" alt="headshot">
+                  <p>Thanks for visiting. I just finished up the Front End Development track at The Iron Yard Durham. I'm excited to start my new career in development, and I'm looking forward to the new challenges that will be presented. While I'm job-hunting, I'm spending time with Project Euler, Code for America, and some other side projects. You can see some of the projects that I built on the left. Feel free to <a href="mailto:gregturmel@gmail.com">shoot me a line</a> if you have any questions on my experience at the Iron Yard, or are curious about some of the projects. Thanks!</p>
                </div>
                <div class = "project-euler project" ng-show = "portfolio.selected(2)">
                   <img src="assets/images/project-euler.png" alt = "Project Euler Screenshot">
